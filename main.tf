@@ -1,7 +1,7 @@
 
 
 resource "aws_instance" "runner" {
-  ami           = local.ami_id
+  ami           = "ami-0220d79f3f480ecf5"
   instance_type = "t3.small"
   vpc_security_group_ids = [aws_security_group.main.id]
   subnet_id = "subnet-0313e1e274ab6c3ef" #replace your Subnet
